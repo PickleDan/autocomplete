@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+LIVE CODING
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Search input with autocomplete
 
-## Available Scripts
+The UI/UX designer decided that search by account input needs
+to be more user-friendly.
 
-In the project directory, you can run:
+They have their mind made on a ‘simple’ autocomplete search box.
+What’s not so simple and not obvious to the designer,
+is that you have a huge dataset of possible results that would
+not be feasible to store on the client side.
 
-### `npm start`
+Your task is to create a component that listens to user input events
+and shows a list of possible matches.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Task 1:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Write a search box component with autocomplete.
+The list of possible options is on the client’s side.
 
-### `npm test`
+Task 2:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The designer wants the list to only show the accounts that includes
+the search term entered by the user. Moreover he has a desire
+to highlight matches in the list of results.
 
-### `npm run build`
+Task 3:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As you remember you store a list of options on the client’s side.
+This list can be really huge. How to avoid glitches and delays?
+Please, improve the performance of your component if it is needed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Task 4:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Unfortunately some users can have more than 1 mln accounts.
+As a result the request for such options list is too slow.
+Please, add an opportunity to work with your component in
+asynchronous mode.
 
-### `npm run eject`
+Task 5:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Some requests for options list can fail.
+The designer would like to give feedback to users in that case.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
