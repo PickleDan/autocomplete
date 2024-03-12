@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import { User } from "./type";
 
-export const users = Array(1000)
+export const users = Array(100)
   .fill(0)
   .map((_, i) => ({
     id: i,
